@@ -11,6 +11,12 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+        thead th{
+            position: sticky;
+            top: -1px;
+            background-color: firebrick;
         }
         td, th{
             padding: 10px;
@@ -20,12 +26,16 @@
             background-color: firebrick;
             color: aliceblue;
         }
+        tbody > tr:nth-child(2n){
+            background-color: rgb(171, 183, 196);
+        }
         
     </style>
 </head>
 <body>
     <!--
         TABLE
+            CAPITION
             THEADER
                 TR, TD, TH
             TBODY
@@ -34,10 +44,15 @@
                 TR TD TH-->
 
     <table>
+        <caption>Titulo da tabela</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>Popoulação</th>
+                <th scope="col" colspan="2">Estado</th>
+                <th scope="col" style="width: 200px;" rowspan="2">Popoulação</th>
+            </tr>
+            <tr>
+                <th scope="col">nome</th>
+                <th scope="col">abreviatura</th>
             </tr>
 
         </thead>
@@ -45,25 +60,172 @@
             <tr>
                 <td>sao paulo</td>
                 <td>49.499.050</td>
+                <td>SP</td>
+
             </tr>
             <tr>
                 <td>minas gerais</td>
                 <td>29.249.740</td>
+                <td>SP</td>
             </tr>
             <tr>
                 <td>rio de janeiro</td>
                 <td>18.324.235</td>
+                <td>SP</td>
+            </tr>
+            <tr>
+                <td>sao paulo</td>
+                <td>49.499.050</td>
+                <td>SP</td>
+            </tr>
+            <tr>
+                <td>minas gerais</td>
+                <td>29.249.740</td>
+                <td>SP</td>
+            </tr>
+            <tr>
+                <td>rio de janeiro</td>
+                <td>18.324.235</td>
+                <td>SP</td>
+            </tr>
+            <tr>
+                <td>sao paulo</td>
+                <td>49.499.050</td>
+                <td>SP</td>
+            </tr>
+            <tr>
+                <td>minas gerais</td>
+                <td>29.249.740</td>
+                <td>SP</td>
+            </tr>
+            <tr>
+                <td>rio de janeiro</td>
+                <td>18.324.235</td>
+                <td>SP</td>
+            </tr>
+            <tr>
+                <td>sao paulo</td>
+                <td>49.499.050</td>
+                <td>SP</td>
+            </tr>
+            <tr>
+                <td>minas gerais</td>
+                <td>29.249.740</td>
+                <td>SP</td>
+            </tr>
+            <tr>
+                <td>rio de janeiro</td>
+                <td>18.324.235</td>
+                <td>SP</td>
+            </tr>
+            <tr>
+                <td>sao paulo</td>
+                <td>49.499.050</td>
+                <td>SP</td>
+            </tr>
+            <tr>
+                <td>minas gerais</td>
+                <td>29.249.740</td>
+                <td>SP</td>
+            </tr>
+            <tr>
+                <td>rio de janeiro</td>
+                <td>18.324.235</td>
+                <td>SP</td>
+            </tr>
+            <tr>
+                <td>sao paulo</td>
+                <td>49.499.050</td>
+                <td>SP</td>
+            </tr>
+            <tr>
+                <td>minas gerais</td>
+                <td>29.249.740</td>
+                <td>SP</td>
+            </tr>
+            <tr>
+                <td>rio de janeiro</td>
+                <td>18.324.235</td>
+                <td>SP</td>
+            </tr>
+            <tr>
+                <td>sao paulo</td>
+                <td>49.499.050</td>
+                <td>SP</td>
+            </tr>
+            <tr>
+                <td>minas gerais</td>
+                <td>29.249.740</td>
+                <td>SP</td>
+            </tr>
+            <tr>
+                <td>rio de janeiro</td>
+                <td>18.324.235</td>
+                <td>SP</td>
+            </tr>
+            <tr>
+                <td>sao paulo</td>
+                <td>49.499.050</td>
+                <td>SP</td>
+            </tr>
+            <tr>
+                <td>minas gerais</td>
+                <td>29.249.740</td>
+                <td>SP</td>
+            </tr>
+            <tr>
+                <td>rio de janeiro</td>
+                <td>18.324.235</td>
+                <td>SP</td>
+            </tr>
+            <tr>
+                <td>sao paulo</td>
+                <td>49.499.050</td>
+                <td>SP</td>
+            </tr>
+            <tr>
+                <td>minas gerais</td>
+                <td>29.249.740</td>
+                <td>SP</td>
+            </tr>
+            <tr>
+                <td>rio de janeiro</td>
+                <td>18.324.235</td>
+                <td>SP</td>
+            </tr>
+            <tr>
+                <td>sao paulo</td>
+                <td>49.499.050</td>
+                <td>SP</td>
+            </tr>
+            <tr>
+                <td>minas gerais</td>
+                <td>29.249.740</td>
+                <td>SP</td>
+            </tr>
+            <tr>
+                <td>rio de janeiro</td>
+                <td>18.324.235</td>
+                <td>SP</td>
             </tr>
 
         </tbody>
         <tfoot>
             <tr>
-                <th>total: </th>
+                <th scope="row">total: </th>
                 <td>210.784.382</td>
             </tr>
 
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem accusamus magnam deleniti saepe optio quasi ut porro ullam. Quis distinctio minus repellat dolorum eius eveniet perferendis animi obcaecati adipisci perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque sapiente magnam cumque sit consequatur illum cupiditate natus! Voluptas consectetur nihil delectus quis alias repudiandae illum ullam itaque reprehenderit, corporis sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. At laborum soluta ab. Non accusamus iure repellat distinctio ipsum nulla voluptatibus. Obcaecati distinctio excepturi, debitis eaque officiis neque quia facilis ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente fugit dolore, sequi, minima nam ratione eius ipsam corporis nihil facilis commodi. Quos asperiores nesciunt, vero molestias at nam voluptatum dolor.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem accusamus magnam deleniti saepe optio quasi ut porro ullam. Quis distinctio minus repellat dolorum eius eveniet perferendis animi obcaecati adipisci perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque sapiente magnam cumque sit consequatur illum cupiditate natus! Voluptas consectetur nihil delectus quis alias repudiandae illum ullam itaque reprehenderit, corporis sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. At laborum soluta ab. Non accusamus iure repellat distinctio ipsum nulla voluptatibus. Obcaecati distinctio excepturi, debitis eaque officiis neque quia facilis ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente fugit dolore, sequi, minima nam ratione eius ipsam corporis nihil facilis commodi. Quos asperiores nesciunt, vero molestias at nam voluptatum dolor.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem accusamus magnam deleniti saepe optio quasi ut porro ullam. Quis distinctio minus repellat dolorum eius eveniet perferendis animi obcaecati adipisci perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque sapiente magnam cumque sit consequatur illum cupiditate natus! Voluptas consectetur nihil delectus quis alias repudiandae illum ullam itaque reprehenderit, corporis sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. At laborum soluta ab. Non accusamus iure repellat distinctio ipsum nulla voluptatibus. Obcaecati distinctio excepturi, debitis eaque officiis neque quia facilis ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente fugit dolore, sequi, minima nam ratione eius ipsam corporis nihil facilis commodi. Quos asperiores nesciunt, vero molestias at nam voluptatum dolor.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem accusamus magnam deleniti saepe optio quasi ut porro ullam. Quis distinctio minus repellat dolorum eius eveniet perferendis animi obcaecati adipisci perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque sapiente magnam cumque sit consequatur illum cupiditate natus! Voluptas consectetur nihil delectus quis alias repudiandae illum ullam itaque reprehenderit, corporis sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. At laborum soluta ab. Non accusamus iure repellat distinctio ipsum nulla voluptatibus. Obcaecati distinctio excepturi, debitis eaque officiis neque quia facilis ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente fugit dolore, sequi, minima nam ratione eius ipsam corporis nihil facilis commodi. Quos asperiores nesciunt, vero molestias at nam voluptatum dolor.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem accusamus magnam deleniti saepe optio quasi ut porro ullam. Quis distinctio minus repellat dolorum eius eveniet perferendis animi obcaecati adipisci perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque sapiente magnam cumque sit consequatur illum cupiditate natus! Voluptas consectetur nihil delectus quis alias repudiandae illum ullam itaque reprehenderit, corporis sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. At laborum soluta ab. Non accusamus iure repellat distinctio ipsum nulla voluptatibus. Obcaecati distinctio excepturi, debitis eaque officiis neque quia facilis ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente fugit dolore, sequi, minima nam ratione eius ipsam corporis nihil facilis commodi. Quos asperiores nesciunt, vero molestias at nam voluptatum dolor.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem accusamus magnam deleniti saepe optio quasi ut porro ullam. Quis distinctio minus repellat dolorum eius eveniet perferendis animi obcaecati adipisci perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque sapiente magnam cumque sit consequatur illum cupiditate natus! Voluptas consectetur nihil delectus quis alias repudiandae illum ullam itaque reprehenderit, corporis sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. At laborum soluta ab. Non accusamus iure repellat distinctio ipsum nulla voluptatibus. Obcaecati distinctio excepturi, debitis eaque officiis neque quia facilis ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente fugit dolore, sequi, minima nam ratione eius ipsam corporis nihil facilis commodi. Quos asperiores nesciunt, vero molestias at nam voluptatum dolor.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem accusamus magnam deleniti saepe optio quasi ut porro ullam. Quis distinctio minus repellat dolorum eius eveniet perferendis animi obcaecati adipisci perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque sapiente magnam cumque sit consequatur illum cupiditate natus! Voluptas consectetur nihil delectus quis alias repudiandae illum ullam itaque reprehenderit, corporis sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. At laborum soluta ab. Non accusamus iure repellat distinctio ipsum nulla voluptatibus. Obcaecati distinctio excepturi, debitis eaque officiis neque quia facilis ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente fugit dolore, sequi, minima nam ratione eius ipsam corporis nihil facilis commodi. Quos asperiores nesciunt, vero molestias at nam voluptatum dolor.</p>
+    
     
 </body>
 </html>

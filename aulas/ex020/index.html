@@ -21,6 +21,10 @@
             vertical-align: top;
         }
 
+        .c{
+            background-color: blue;
+        }
+
     </style>
 </head>
 <body>
@@ -36,6 +40,12 @@
     
     <h1>Minha primeira tabela</h1>
     <table>
+        <colgroup>
+            <col class="a">
+            <col class="b">
+            <col class="c">
+        </colgroup>
+        
         <tr>
             <td>A1</td>
             <td>B1</td>
@@ -51,7 +61,7 @@
             <td>B3</td>
             <td>C3</td>
         </tr>
-        <tr>
+        <tr class="destaque">
             <td>A4</td>
             <td>B4</td>
             <td>C4</td>
